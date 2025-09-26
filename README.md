@@ -1,6 +1,6 @@
-# Code in React 19
+# Build a Modern Portfolio Website with React & TailwindCSS
 
-As React 19 is new, this scaffolding project is for everyone who wants to start coding in React 19.
+Create a Stunning Developer Portfolio with Animations, Dark Mode, and Projects Showcase
 
 It has:
 
@@ -10,22 +10,34 @@ It has:
 - React Router
 - Theme Toggle
 - Theme Customization
+- Lucide Icons
+- Responsive animations
 
-## Create Your Own React 19 Project with Vite and TailwindCSS
+## ⚡️ Features
 
-There are multiple ways you can utilize this repository to create your own project. The most straightforward way is by using the follwoing command from the command prompt/terminal:
+- 🌑 **Light/Dark Mode Toggle**
+  Save theme preference in local storage with beautiful transitions
 
-<!-- ```bash
-npx degit atapas/code-in-react-19#main <YOUR_PROJECT_NAME>
-``` -->
+- 💫 **Animated Backgrounds**
+  Stars, meteors, scroll effects, and glowing UI elements
 
-This will clone the repository to your project. Alternatively, you can fork this repo or create a new repo from the template by clicking on the button at the top-right corner.
+- 📱 **Responsive Navigation**
+  Desktop and mobile menus with glassmorphism
 
-## 🫶 Support
+- 👨‍💻 **Hero & About Sections**
+  Showcase who you are with smooth intro animations and buttons
 
-Liked it? You can show your support with a STAR(⭐).
+- 📊 **Skills Grid**
+  Filterable progress bars and categories with animated width
 
-> Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
+- 🖼️ **Projects Showcase**
+  Display screenshots, tech stacks, and GitHub/demo links
+
+- 📩 **Contact Section**
+  Social icons + responsive contact form with toast notifications
+
+- 🚀 **One-Click Deployment**
+  Easily host your site with Vercel and GitHub
 
 ### Sponsor My Work
 
@@ -33,8 +45,28 @@ Liked it? You can show your support with a STAR(⭐).
 
 ## Run it Locally
 
-- Clone or fork the repo
-- Install dependencies using `npm install` or `yarn install`
-- Run it using `npm run dev` or `yarn dev`
+### Prerequisites
 
-The app will be available on `http://localhost:5173` by default.
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+
+### Clone and Run
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+Your app will be available at: [http://localhost:5173](http://localhost:5173)
+
+## 🔗 Useful Links
+
+- [React Documentation](https://reactjs.org/)
+- [Tailwind CSS Docs](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [Radix UI](https://www.radix-ui.com/)
+- [Vite](https://vitejs.dev/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://netlify.com/)
