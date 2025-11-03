@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "@/pages/Home";
 import NotFound from "@/components/NotFound";
 import { Toaster } from "@/components/ui/toaster";

@@ -153,8 +153,5 @@
 }
 
 #root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+  @apply max-w-full my-0 mx-auto p-0 text-center;
 }

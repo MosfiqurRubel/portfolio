@@ -1,12 +1,16 @@
 import { Briefcase, Code, User } from "lucide-react";
+import Heading from "@/components/ui/Heading";
 
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center space-x-2">
+        <Heading
+          align="center"
+          className="md:text-4xl mb-12 text-center space-x-2"
+        >
           About <span className="text-primary">Me</span>
-        </h2>
+        </Heading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

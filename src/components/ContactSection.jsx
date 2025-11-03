@@ -1,5 +1,7 @@
-import { Send } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
+  Send,
   Facebook,
   Instagram,
   Linkedin,
@@ -9,7 +11,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import Heading from "@/components/ui/Heading";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -32,9 +34,12 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center space-x-2">
+        <Heading
+          align="center"
+          className="md:text-4xl mb-12 text-center space-x-2"
+        >
           Get In <span className="text-primary">Touch</span>
-        </h2>
+        </Heading>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
           I'm always open to discussing new opportunities.
@@ -87,17 +92,23 @@ const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <h4 className="font-medium mb-4"> Connect With Me sss</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <Link
+                  to="https://www.linkedin.com/in/mosfiqrubel/"
+                  target="_blank"
+                >
                   <Linkedin />
-                </a>
-                <a href="#" target="_blank">
+                </Link>
+                <Link
+                  to="https://www.facebook.com/mosfiq.rubel"
+                  target="_blank"
+                >
                   <Facebook />
-                </a>
-                <a href="#" target="_blank">
+                </Link>
+                <Link to="#" target="_blank">
                   <Instagram />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
