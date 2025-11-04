@@ -28,9 +28,9 @@ const Button = ({
 
   const sizeClasses = {
     auto: "gap-1",
-    sm: "text-xs px-3 py-1.5",
-    md: "text-sm px-4 py-2",
-    lg: "text-base px-5 py-2",
+    sm: "text-sm px-3 py-1.5",
+    md: "text-base px-4 py-2",
+    lg: "text-lg px-5 py-2",
   };
 
   const roundedClasses = {
@@ -43,9 +43,9 @@ const Button = ({
 
   const variantColors = {
     primary: {
-      fill: "border border-transparent bg-primary-600 text-white hover:bg-primary-700",
+      fill: "border border-transparent bg-primary text-white hover:bg-primary/90",
       outline:
-        "border border-primary-600 text-primary-600 hover:border-primary-700",
+        "border border-primary text-primary hover:bg-primary/10 hover:border-primary",
     },
     secondary: {
       fill: "border border-transparent bg-secondary-500 text-white hover:bg-secondary-600",
@@ -53,23 +53,22 @@ const Button = ({
         "border border-secondary-500 text-secondary-500 hover:border-secondary-400",
     },
     success: {
-      fill: "border border-transparent bg-success-500 text-white hover:bg-success-600",
-      outline:
-        "border border-success-500 text-success-500 hover:border-success-400",
+      fill: "border border-transparent bg-teal-500 text-white hover:bg-teal-600",
+      outline: "border border-teal-500 text-teal-500 hover:border-teal-400",
     },
     danger: {
-      fill: "border border-transparent bg-danger-500 text-white hover:bg-danger-600",
-      outline:
-        "border border-danger-500 text-danger-500 hover:border-danger-400",
+      fill: "border border-transparent bg-red-500 text-white hover:bg-red-600",
+      outline: "border border-red-500 text-red-500 hover:border-red-400",
     },
     warning: {
-      fill: "border border-transparent bg-warning-500 text-white hover:bg-warning-600",
+      fill: "border border-transparent bg-yellow-500 text-white hover:bg-yellow-600",
       outline:
-        "border border-warning-500 text-warning-500 hover:border-warning-400",
+        "border border-yellow-500 text-yellow-500 hover:border-yellow-400",
     },
     info: {
-      fill: "border border-transparent bg-info-500 text-white hover:bg-info-600",
-      outline: "border border-info-500 text-info-500 hover:border-info-400",
+      fill: "border border-transparent bg-indigo-500 text-white hover:bg-indigo-600",
+      outline:
+        "border border-indigo-500 text-indigo-500 hover:border-indigo-400",
     },
     custom: { fill: "", outline: "" },
   };
@@ -80,7 +79,7 @@ const Button = ({
   const hoverEffects = {
     none: "",
     shadow: "hover:shadow-lg",
-    ring: "hover:ring-2 hover:ring-offset-2 hover:ring-primary-500/50",
+    ring: "hover:ring-2 hover:ring-offset-2 hover:ring-primary/50",
   };
 
   const animationClasses = {

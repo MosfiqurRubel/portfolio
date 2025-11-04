@@ -1,21 +1,31 @@
 import { useNavigate } from "react-router-dom";
+import Heading from "@/components/ui/Heading";
+import Button from "@/components/ui/Button";
 
 const NotFound = () => {
   const navigate = useNavigate();
+
   return (
-    <section className="py-24 px-4 flex flex-col items-center justify-center min-h-screen">
-      <div class="flex items-center mb-5">
-        <h2 class="text-3xl md:text-4xl font-bold border-e border-border pe-4">
-          404
-        </h2>
-        <span class="text-xl text-primary uppercase ms-4">Not Found</span>
+    <section className="min-h-screen flex-center flex-col py-24 px-4">
+      <div className="flex flex-col items-center">
+        <div className="flex items-center mb-5">
+          <Heading
+            level="1"
+            className="md:text-5xl border-e border-gray-300 pe-4"
+            text="404"
+          />
+
+          <span className="text-lg text-gray-500 uppercase ms-4">
+            Not Found
+          </span>
+        </div>
+        <Button
+          variant="primary"
+          rounded="full"
+          text="Go Back Home"
+          onClick={() => navigate("/")}
+        />
       </div>
-      <button
-        onClick={() => navigate("/")}
-        className="cosmic-button cursor-pointer"
-      >
-        Go Back Home
-      </button>
     </section>
   );
 };

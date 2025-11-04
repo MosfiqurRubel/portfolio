@@ -122,6 +122,10 @@
   }
 }
 
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
 @utility text-glow {
   @apply relative;
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);

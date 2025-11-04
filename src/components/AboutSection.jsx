@@ -1,7 +1,14 @@
 import { Briefcase, Code, User } from "lucide-react";
 import Heading from "@/components/ui/Heading";
+import DownloadButton from "@/components/ui/DownloadButton";
+import cv from "@/assets/Mosfiqur_Rahman_CV_2025.pdf";
 
 const AboutSection = () => {
+  // const handleDownload = () => {
+  //   const link = document.createElement('a');
+  //   link.href =
+  // };
+
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -33,12 +40,7 @@ const AboutSection = () => {
               <a href="#contact" className="cosmic-button">
                 Get In Touch
               </a>
-              <a
-                href="dfd"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors divide-fuchsia-300"
-              >
-                Download CV
-              </a>
+              <DownloadButton documentUrl={cv} fileName="CV" />
             </div>
           </div>
 
