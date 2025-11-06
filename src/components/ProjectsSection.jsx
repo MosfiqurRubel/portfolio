@@ -26,12 +26,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Book Store App",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Book Store App is a full-featured CRUD web application built with React, Redux Toolkit and RTK Query.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
+    tags: ["React", "Redux Toolkit", "RTK Query"],
+    demoUrl: "https://mosfiqmanagebook.netlify.app",
     githubUrl: "https://github.com/MosfiqurRubel",
     netlifyUrl: "https://app.netlify.com/teams/mosfiqurrubel/projects",
   },
@@ -77,7 +77,13 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <Heading
+                  level="4"
+                  fontWeight="semibold"
+                  align="center"
+                  className="mb-1"
+                  text={project.title}
+                />
                 <p className="text-sm text-muted-foreground mb-4">
                   {project.description}
                 </p>
