@@ -23,9 +23,10 @@ const HeroSection = () => {
             </span>
           </Heading>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay3">
-            I create a stellar web experiences with modern Technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+            A front-end developer passionate about crafting modern,
+            high-performance web experiences. I combine clean design with
+            cutting-edge technologies to build interfaces that are fast,
+            accessible, and visually engaging.
           </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay4">
             <a href="#projects" className="cosmic-button">

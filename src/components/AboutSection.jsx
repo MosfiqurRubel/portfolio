@@ -4,11 +4,6 @@ import DownloadButton from "@/components/ui/DownloadButton";
 import cv from "@/assets/Mosfiqur_Rahman_CV_2025.pdf";
 
 const AboutSection = () => {
-  // const handleDownload = () => {
-  //   const link = document.createElement('a');
-  //   link.href =
-  // };
-
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -21,13 +16,11 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
-            </h3>
+            <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
             <p className="text-muted-foreground">
-              With over 16 years of experience in web development, I
-              specialize in creating responsive, accessible and performant web
-              applications using modern technologies.
+              With over 16 years of experience in web development, I specialize
+              in creating responsive, accessible and performant web applications
+              using modern technologies.
             </p>
             <p className="text-muted-foreground">
               I'm passionate about creating elegant solution to complex
@@ -79,7 +72,7 @@ const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Development</h4>
+                  <h4 className="font-semibold text-lg">Project Lead</h4>
                   <p className="text-muted-foreground">
                     Leading projects from conception to completion with agile
                     methodologies.

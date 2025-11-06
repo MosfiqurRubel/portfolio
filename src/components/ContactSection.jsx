@@ -1,14 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Send,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { Send, Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import Heading from "@/components/ui/Heading";
@@ -92,7 +84,7 @@ const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me sss</h4>
+              <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <Link
                   to="https://www.linkedin.com/in/mosfiqrubel/"
@@ -106,8 +98,8 @@ const ContactSection = () => {
                 >
                   <Facebook />
                 </Link>
-                <Link to="#" target="_blank">
-                  <Instagram />
+                <Link to="https://wa.me/8801727179840" target="_blank">
+                  <Phone />
                 </Link>
               </div>
             </div>
