@@ -1,7 +1,7 @@
 import { Briefcase, Code, User } from "lucide-react";
 import Heading from "@/components/ui/Heading";
 import DownloadButton from "@/components/ui/DownloadButton";
-import cv from "@/assets/Mosfiqur_Rahman_CV_2025.pdf";
+import cv from "@/assets/Mosfiqur_Rahman.pdf";
 
 const AboutSection = () => {
   return (
