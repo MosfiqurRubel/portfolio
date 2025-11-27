@@ -4,6 +4,7 @@ import { Send, Facebook, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import Heading from "@/components/ui/Heading";
+import Button from "./ui/Button";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -157,17 +158,15 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                 />
               </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
-                )}
+              <Button
+                disabled={true}
+                variant="primary"
+                rounded="full"
+                className="cosmic-button w-full flex items-center justify-center gap-2"
               >
                 {isSubmitting ? "Sending" : "Send Message"}
                 <Send size={16} />
-              </button>
+              </Button>
             </form>
           </div>
         </div>
