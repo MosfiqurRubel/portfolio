@@ -33,7 +33,11 @@ const AboutSection = () => {
               <a href="#contact" className="cosmic-button">
                 Get In Touch
               </a>
-              <DownloadButton documentUrl={cv} fileName="CV" />
+              <DownloadButton
+                documentUrl={cv}
+                buttonText="Download CV"
+                downloadFileName="Mosfiqur_Rahman_CV.pdf"
+              />
             </div>
           </div>
 
