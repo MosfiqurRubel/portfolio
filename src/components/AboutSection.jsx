@@ -18,9 +18,9 @@ const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
             <p className="text-muted-foreground">
-              With over 16 years of experience in web development, I specialize
-              in creating responsive, accessible and performant web applications
-              using modern technologies.
+              With over 16 years of professional experience in web development,
+              I specialize in creating responsive, accessible and performant web
+              applications using modern technologies.
             </p>
             <p className="text-muted-foreground">
               I'm passionate about creating elegant solution to complex
