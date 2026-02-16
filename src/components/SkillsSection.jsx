@@ -13,6 +13,7 @@ const skills = [
   { name: "Vue.js", level: 60, category: "frontend" },
   { name: "Bootstrap", level: 90, category: "frontend" },
   { name: "Kendo UI", level: 90, category: "frontend" },
+  { name: "Mantine UI", level: 65, category: "frontend" },
   { name: "WordPress", level: 50, category: "frontend" },
   { name: "React Native", level: 60, category: "frontend" },
   { name: "Angular Material", level: 60, category: "frontend" },
@@ -31,7 +32,7 @@ const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
 
   return (
@@ -53,7 +54,7 @@ const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize ",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary cursor-pointer"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary cursor-pointer",
               )}
             >
               {category}
