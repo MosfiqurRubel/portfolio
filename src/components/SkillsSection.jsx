@@ -18,6 +18,11 @@ const skills = [
   { name: "React Native", level: 60, category: "frontend" },
   { name: "Angular Material", level: 60, category: "frontend" },
 
+  //Backend
+  { name: "Node.js", level: 40, category: "backend" },
+  { name: "Express.js", level: 10, category: "backend" },
+  { name: "MongoDB", level: 65, category: "backend" },
+
   //Tools
   { name: "Git/GitHub", level: 80, category: "tools" },
   { name: "Figma", level: 50, category: "tools" },
@@ -26,7 +31,7 @@ const skills = [
   { name: "Jira", level: 50, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "tools"];
+const categories = ["all", "frontend", "backend", "tools"];
 
 const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
