@@ -11,6 +11,7 @@ const skills = [
   { name: "React", level: 75, category: "frontend" },
   { name: "Redux", level: 65, category: "frontend" },
   { name: "Vue.js", level: 60, category: "frontend" },
+  { name: "GSAP", level: 50, category: "frontend" },
   { name: "Bootstrap", level: 90, category: "frontend" },
   { name: "Kendo UI", level: 90, category: "frontend" },
   { name: "Mantine UI", level: 65, category: "frontend" },
