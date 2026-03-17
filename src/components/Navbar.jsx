@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -14,6 +16,15 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+
+  useGSAP(() => {
+    gsap.from("#logo, .nav-link", {
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      stagger: 0.15,
+    });
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,11 +50,12 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-5 bg-background/80 shadow-xs" : "py-4 bg-transparent"
+        isScrolled ? "py-5 bg-background/80 shadow-xs" : "py-4 bg-transparent",
       )}
     >
       <div className="container flex items-center justify-between">
         <a
+          id="logo"
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
@@ -60,10 +72,10 @@ const Navbar = () => {
               href={item.href}
               // className="text-foreground/80 hover:text-primary transition-colors duration-300"
               className={cn(
-                "transition-colors duration-300",
+                "transition-colors duration-300 nav-link",
                 activeSection === item.href.substring(1)
                   ? "text-primary font-semibold"
-                  : "text-foreground/80 hover:text-primar"
+                  : "text-foreground/80 hover:text-primary",
               )}
             >
               {item.name}
@@ -86,7 +98,7 @@ const Navbar = () => {
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+              : "opacity-0 pointer-events-none",
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
@@ -100,7 +112,7 @@ const Navbar = () => {
                   "transition-colors duration-300",
                   activeSection === item.href.substring(1)
                     ? "text-primary font-semibold"
-                    : "text-foreground/80 hover:text-primary"
+                    : "text-foreground/80 hover:text-primary",
                 )}
               >
                 {item.name}
