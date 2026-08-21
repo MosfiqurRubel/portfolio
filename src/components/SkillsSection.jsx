@@ -9,15 +9,15 @@ const skills = [
   { name: "JavaScript", level: 70, category: "frontend" },
   { name: "TypeScript", level: 70, category: "frontend" },
   { name: "React", level: 75, category: "frontend" },
-  { name: "Redux", level: 65, category: "frontend" },
-  { name: "Next.js", level: 50, category: "frontend" },
+  { name: "Redux", level: 70, category: "frontend" },
+  { name: "Next.js", level: 60, category: "frontend" },
+  { name: "React Native", level: 80, category: "frontend" },
   { name: "Vue.js", level: 60, category: "frontend" },
   { name: "GSAP", level: 50, category: "frontend" },
   { name: "Bootstrap", level: 90, category: "frontend" },
   { name: "Kendo UI", level: 90, category: "frontend" },
   { name: "Mantine UI", level: 65, category: "frontend" },
   { name: "WordPress", level: 50, category: "frontend" },
-  { name: "React Native", level: 60, category: "frontend" },
   { name: "Angular Material", level: 60, category: "frontend" },
 
   //Backend
